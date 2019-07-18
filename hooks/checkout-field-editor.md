@@ -98,11 +98,13 @@ true
 
 ### thwcfe_select2_i18n_languages**
 
-apply_filters('thwcfe_select2_i18n_languages', false);
+apply_filters('thwcfe_select2_i18n_languages', array());
+
+which languages select2 (warning message & defaut) to be translated. langes array
 
 #### Parameters
 
-Boolean value
+empty array
 
 #### Useage
 
@@ -142,6 +144,8 @@ false
 
 	apply_filters('thwcfe_date_picker_field_readonly', true);
 
+Date picker read only. No option to enter date field manually.  If manually enetering required, return false.
+
 #### Parameters
 
 Boolean value
@@ -162,6 +166,8 @@ true
 
 	apply_filters('thwcfe_date_picker_notranslate', true);
 
+Enable date picker for translateion.
+
 #### Parameters
 
 Boolean value
@@ -178,11 +184,11 @@ true
 
 	public/class-thwcfe-public-checkout.php
 
-### thwcfe_time_picker_restrict_slots_for_same_day
+### thwcfe_time_picker_restrict_slots_for_same_day (???)
 
 	apply_filters( 'thwcfe_time_picker_restrict_slots_for_same_day', true);
 
-Restrict all time slot in current day in time picker field
+Disable all time slot before current time in current day in time picker field
 
 #### Parameters
 
@@ -204,9 +210,10 @@ true
 
 	apply_filters( 'thwcfe_enable_conditions_based_on_review_panel_fields', $enable_conditions_payment_shipping);
 
-Enable conditional rules based on payment and shipping.
+Enable conditional rules based on payment and shipping. Option already avialble in backend settings.
 
 #### Parameters
+
 
 
 #### Useage
@@ -219,9 +226,10 @@ Enable conditional rules based on payment and shipping.
 
 	public/class-thwcfe-public-checkout.php
 
-### thwcfe_change_event_disabled_fields**
+### thwcfe_change_event_disabled_fields (????)
 
-	apply_filters('thwcfe_change_event_disabled_fields', ''),
+	apply_filters('thwcfe_change_event_disabled_fields', '');
+
 
 #### Parameters
 
@@ -281,9 +289,11 @@ true
 
 	public/class-thwcfe-public-checkout.php
 
-### thwcfe_cart_product_categories**
+### thwcfe_cart_product_categories(????)
 
 	apply_filters('thwcfe_cart_product_categories', array_values($cart['categories']);
+
+Modify category summery
 
 #### Parameters
 
@@ -297,7 +307,9 @@ true
 
 ### thwcfe_ignore_wpml_translation_for_product_category**
 
-	apply_filters('thwcfe_ignore_wpml_translation_for_product_category', false);
+	apply_filters('thwcfe_ignore_wpml_translation_for_product_category', true);
+
+ignore product category translation for conditional fields.
 
 #### Parameters
 
@@ -315,7 +327,7 @@ true
 
 	public/class-thwcfe-public-checkout.php
 
-### thwcfe_use_default_fields_if_empty**
+### thwcfe_use_default_fields_if_empty(internal pourpose only)
 
 If shipping and billing fields are empty, use default billing and shipping fields.
 
@@ -344,11 +356,11 @@ false
 
 	public/class-thwcfe-public-checkout.php
 
-### thwcfe_ignore_address_field_changes
+### thwcfe_ignore_address_field_changes (???? - need to change hook name)
 
 	apply_filters('thwcfe_ignore_address_field_changes', false));
 
-If address field are overrided by checkout field editor plugin, wordpress can force to use default address field using this filter.
+If checkout field are overrided by cfe plugin, ignore this changes in my account pages and only effect in checkout fields.
 
 #### Parameters
 
@@ -366,9 +378,11 @@ false
 
 	public/class-thwcfe-public-checkout.php
 
-### thwcfe_skip_default_address_fields_override
+### thwcfe_skip_default_address_fields_override (Private use ----------------------------)
 
 	apply_filters('thwcfe_skip_default_address_fields_override', false);
+
+Disable overriding of defaul address fields (country, zip, address 1, address 2).
 
 #### Parameters
 
