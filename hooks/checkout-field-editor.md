@@ -342,7 +342,7 @@ function override_cart_category($categories){
 
 	apply_filters('thwcfe_ignore_wpml_translation_for_product_category', true);
 
-ignore product category translation for conditional fields.
+Ignore product category translation for conditional fields.
 
 #### Parameters
 
