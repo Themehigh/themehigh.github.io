@@ -302,7 +302,7 @@ true
 
 	public/class-thwcfe-public-checkout.php
 
-### thwcfe_cart_product_categories(????)
+### thwcfe_cart_product_categories
 
 	apply_filters('thwcfe_cart_product_categories', array_values($cart['categories']);
 
@@ -1834,15 +1834,29 @@ Empty
 
 	public/class-thwcfe-public.php
 
-### account_file_name_prefix
+### thwcfe_my-account_file_name_prefix
 
 	apply_filters('thwcfe_my-account_file_name_prefix', '', $key);
+	
+Add / Change uploaded file's name prefix.
 
 #### Parameters
 
+Empty string
+
+$key - String
+
 #### Usage
 
+	add_filter( 'thwcfe_my-account_file_name_prefix', 'qs325_thwcfe_uploaded_file_name_prefix', 10, 2 );
+	function qs325_thwcfe_uploaded_file_name_prefix($prefix, $key){
+		
+		return $prefix;
+	}
+
 #### Default value
+
+Empty string
 
 #### Location
 
