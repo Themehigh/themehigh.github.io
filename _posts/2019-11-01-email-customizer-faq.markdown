@@ -49,7 +49,7 @@ But email customizer has option to customize these WooCommerce Elements (  Heade
 2. From the list that appears on sidebar, navigate and click on `WooCommerce Elements` section.
 3. You can see the list of WooCommerce elements that can be customized (Downloadable product is not customizable now).   
    
-   
+
 ### USING CUSTOM HOOK
 
 Email customizer has a special feature called `Custom Hook`. The `Custom Hook` is an action hook, which can be used to add dynamic contents to the email template. You can use custom hook to show Order meta fields, Display shortcodes from third party plugins in Email,  Result based on checkout field values or on the email status like processing, on hold etc.
@@ -60,13 +60,12 @@ You can use the `Custom Hook` as follows
 2. From the list that appears on sidebar, navigate and click on `WooCommerce Hooks` section.
 3. Click on `Custom Hook` tile. You can see `{custom_hook_name}` added to the builder.
 4. Click on the `Edit` button (pencil icon) near the `Custom Hook` entry in the right sidebar
-5. Enter a unique name for the hook (eg: `themehigh_template_hook` ). Using an existing hook name can cause unexpected errors.
+5. Enter a unique name for the hook (eg: **themehigh_template_hook** ). Using an existing hook name can cause unexpected errors.
 6. Use the hook name provided to write a function in the active theme/ child theme functions.php
 	
-    function themehigh_template_hook_callback( $order, $email ){
+	function themehigh_template_hook_callback( $order, $email ){
 		// Your content here
 	}
-	add_action('themehigh_template_hook', 'themehigh_template_hook_callback', 10, 2);
+	add_action('themehigh_template_hook', 'themehigh_template_hook_callback', 10, 2);    
 
-
-
+	    
