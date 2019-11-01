@@ -61,11 +61,12 @@ You can use the `Custom Hook` as follows
 3. Click on `Custom Hook` tile. You can see `{custom_hook_name}` added to the builder.
 4. Click on the `Edit` button (pencil icon) near the `Custom Hook` entry in the right sidebar
 5. Enter a unique name for the hook (eg: **themehigh_template_hook** ). Using an existing hook name can cause unexpected errors.
-6. Use the hook name provided to write a function in the active theme/ child theme functions.php
+6. Use the hook name provided to write a function in the active theme/ child theme functions.php. 
+
 	
-	function themehigh_template_hook_callback( $order, $email ){
-		// Your content here
-	}
-	add_action('themehigh_template_hook', 'themehigh_template_hook_callback', 10, 2);    
+		function themehigh_template_hook_callback( $order, $email ){
+			// Your content here
+		}
+		add_action('themehigh_template_hook', 'themehigh_template_hook_callback', 10, 2);    
 
 	    
