@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Override HTML content displayed in order email - Checkout field editor for WooCommerce
+title:  Override HTML content displayed in order email - Checkout Field Editor Pro for WooCommerce
 ---
 
 The Checkout Field Editor Pro for WooCommerce allow custom field value in order email. The markup is plain `p` tag & `strong` tag.
