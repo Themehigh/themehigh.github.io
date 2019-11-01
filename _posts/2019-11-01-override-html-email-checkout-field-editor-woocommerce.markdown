@@ -11,12 +11,12 @@ You can change the section title or field label & value combination by some simp
 
 An example is given below.
 
-	add_filter('thwcfe_email_display_field_html', 'oveeride_thwcfe_email_display_field_html', 4, 10);
+	add_filter('thwcfe_email_display_field_html', 'override_thwcfe_email_display_field_html', 4, 10);
 
-	function oveeride_thwcfe_email_display_field_html($html, $type, $label, $value){	
+	function override_thwcfe_email_display_field_html($html, $type, $label, $value){	
 		
 		if($type == 'heading'){
-			$html = '<h3>' . $value . '</h3h3>';
+			$html = '<h3>' . $value . '</h3>';
 		}
 		
 		return $html;
