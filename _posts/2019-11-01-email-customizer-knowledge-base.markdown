@@ -3,6 +3,38 @@ layout: post
 title:  Email Customizer Knowledge Base
 categories: jekyll update
 ---
+   
+### ARE ALL EMAILS CUSTOMIZABLE ?
+   
+Email notifications for the default WooCommerce order statuses are customizable. Custom email order status created by 3rd party plugin or using custom coding is not supported at the moment. 
+The list of customizable email notifications are listed below.
+
+1. Admin New Order Email	
+2. Admin Cancelled Order Email	
+3. Admin Failed Order Email	
+4. Customer Completed Order	
+5. Customer On Hold Order Email	
+6. Customer Processing Order	Email
+7. Customer Refund Order	Email
+8. Customer invoice / Order details	Email
+9. Customer Note	Email
+10. Reset Password Email
+11. New Account Email
+   
+
+### EMAILS ARE NOT DELIVERED ?
+  
+If emails from Email Customizer plugin (including Test email) are sent but not delivered, then please check the following,
+
+1. Check if any SMTP plugin is active. If yes check whether the SMTP plugin is configured correctly. Try placing Test mail from the SMTP plugin to rule out issues.
+2. Deactivate the Email Customizer plugin and confirm whether WooCommerce Default emails are delivered.
+3. If none of the above steps solve the issue, please contact Email Customizer support team
+
+
+### BROKEN IMAGES IN EMAILS
+   
+   If the image in email send using Email Customizer plugin is broken, confirm whether the image is publicly accessible. Also ensure your images are inserted with a full URL including the protocol.     
+   
 
 ### CUSTOMER NOTE IN EMAIL TEMPLATE
 
