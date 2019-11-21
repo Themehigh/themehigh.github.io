@@ -116,12 +116,11 @@ You can use the `Custom Hook` as follows
 
 ### THEMEHIGH CHECKOUT FIELD EDITOR PLUGIN INTEGRATION
    
-The plugin [Themehigh Checkout Field Editor for WooCommerce](https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/) is compatible with email customizer. The fields created using Checkout field editor plugin is passed conditionally to default woocommerce hooks
-**woocommerce_email_order_meta** or **woocommerce_email_customer_details**
+The plugin [Themehigh Checkout Field Editor for WooCommerce](https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/) is compatible with email customizer. The fields created using Checkout field editor plugin is passed conditionally to default woocommerce hooks `woocommerce_email_order_meta` or `woocommerce_email_customer_details`.
 
 Email customizer have option to show the checkout fields anywhere in the template using a shortcode `[WCFE name='field_name' label='field_label']`
 
-You can use the shortcode `[WCFE name="field_name"]` to show only the value without label.
+You can use the shortcode `[WCFE name='field_name']` to show only the value without label.
 
 Eg: Consider you have created a field `test_field` in the checkout field editor plugin. In order to show the field in the email template at a particular position, you can use the above shortcode as `[WCFE name='test_field' label='Test Field']`.
 
