@@ -3,6 +3,8 @@ layout: post
 title:  Email Customizer Knowledge Base
 categories: jekyll update
 ---
+
+{:toc}
    
 ### ARE ALL EMAILS CUSTOMIZABLE ?
    
@@ -24,9 +26,10 @@ The list of customizable email notifications are listed below.
 
 ### EMAILS ARE NOT DELIVERED ?
   
-If emails from Email Customizer plugin (including Test email) are sent but not delivered, then please check the following,
+If emails from Email Customizer plugin (including Test email) are not delivered, then please check the following,
 
 1. Check if any SMTP plugin is active. If yes check whether the SMTP plugin is configured correctly. Try placing Test mail from the SMTP plugin to rule out issues.
+2. If no SMTP plugins are active, then 
 2. Deactivate the Email Customizer plugin and confirm whether WooCommerce Default emails are delivered.
 3. If none of the above steps solve the issue, please contact Email Customizer support team
 
@@ -102,3 +105,14 @@ You can use the `Custom Hook` as follows
 		add_action('themehigh_template_hook', 'themehigh_template_hook_callback', 10, 2);    
 
 	    
+### USING CUSTOM HOOK
+
+Email customizer has a special feature called `Custom Hook`. The `Custom Hook` is an action hook, which can be used to add dynamic contents to the email template. You can use custom hook to show Order meta fields, Display shortcodes from third party plugins in Email,  Result based on checkout field values or on the email status like processing, on hold etc.
+
+You can use the `Custom Hook` as follows
+
+1. Click on `Add Element` button inside a column.
+2. From the list that appears on sidebar, navigate and click on `WooCommerce Hooks` section.
+3. Click on `Custom Hook` tile. You can see `{custom_hook_name}` added to the builder.
+4. Click on the `Edit` button (pencil icon) near the `Custom Hook` entry in the right sidebar
+5. Enter a unique name for the hook (eg: **themehigh_template_hook** ). Using an existing hook name can cause unexpected errors.
