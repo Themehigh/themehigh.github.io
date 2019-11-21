@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  Email Customizer Knowledge Base
+title:  Email Customizer for WooCommerce (Knowledge Base )
 categories: jekyll update
 ---
+
+#### THEMEHIGH EMAIL CUSTOMIZER FOR WOOCOMMERCE [FREE VERSION](https://wordpress.org/plugins/email-customizer-for-woocommerce/) [PREMIUM VERSION](https://www.themehigh.com/product/woocommerce-email-customizer/) [DEMO](https://flydemos.com/wecm/wp-admin)
 
 ## Quick Links
 {:.no_toc}
@@ -28,14 +30,15 @@ The list of customizable email notifications are listed below.
 11. New Account Email
    
 
-### EMAILS ARE NOT DELIVERED ?
-  
-If emails from Email Customizer plugin (including Test email) are not delivered, then please check the following,
+### EMAILS ARE NOT SEND/DELIVERED ?
+ 
+if emails from the Email Customizer plugin are not send or is not delivered, then please check the following.
 
 1. Check if any SMTP plugin is active. If yes check whether the SMTP plugin is configured correctly. Try placing Test mail from the SMTP plugin to rule out issues.
-2. If no SMTP plugins are active, then 
-2. Deactivate the Email Customizer plugin and confirm whether WooCommerce Default emails are delivered.
-3. If none of the above steps solve the issue, please contact Email Customizer support team
+2. If no SMTP plugins are active, then try an SMTP plugin like [Easy WP SMTP](https://en-gb.wordpress.org/plugins/easy-wp-smtp/)and configure the settings accordingly. 
+3. Use an email logging plugin like [WP Mail Logging](https://en-gb.wordpress.org/plugins/wp-mail-logging/) which will log all outgoing mails so you can see what is being sent. Place a test order to see if order emails are logged in WP Mail Logging settings (dashboard > WP Mail Log). If emails are not logged it could be a plugin or theme conflict.
+4. Deactivate the Email Customizer plugin and confirm whether WooCommerce Default emails are delivered. Continue this process by deactivating other plugins till email is sent or delivered.
+5. If none of the above steps solve the issue, please contact Email Customizer support team
 
 
 ### BROKEN IMAGES IN EMAILS
@@ -120,3 +123,19 @@ You can use the `Custom Hook` as follows
 3. Click on `Custom Hook` tile. You can see `{custom_hook_name}` added to the builder.
 4. Click on the `Edit` button (pencil icon) near the `Custom Hook` entry in the right sidebar
 5. Enter a unique name for the hook (eg: **themehigh_template_hook** ). Using an existing hook name can cause unexpected errors.
+   
+
+### THEMEHIGH CHECKOUT FIELD EDITOR PLUGIN INTEGRATION
+   
+The plugin [Themehigh Checkout Field Editor for WooCommerce](https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/) is compatible with email customizer plugin. Checkout field editor plugin passes checkout fields conditionally to default woocommerce hook **woocommerce_email_order_meta** or **woocommerce_email_customer_details**
+
+Email customizer have option to show the checkout fields anywhere in the template using a shortcode `[WCFE name="field_name" label="field_label"]`
+
+You can use the shortcode `[WCFE name="field_name"]` to show only the field value.
+
+Eg: consider you have created a field `test_field` in the `Checkout Field Editor plugin`. In order to show the field in the email template at a particular position, you can use `[WCFE name='test_field' label='Test Field']`
+
+
+N.B: Remember not to use double qoutes in the shortcode. 
+
+
