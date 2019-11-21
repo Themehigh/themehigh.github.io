@@ -4,7 +4,7 @@ title:  Email Customizer for WooCommerce
 categories: jekyll update
 ---
 
-###### Themehigh Email Customizer plugin for WooCommerce - Design the way you love !! 
+###### Themehigh Email Customizer plugin for WooCommerce - Design the way you love !!
 [FREE](https://wordpress.org/plugins/email-customizer-for-woocommerce/) | [PREMIUM](https://www.themehigh.com/product/woocommerce-email-customizer/) | [DEMO](https://flydemos.com/wecm/wp-admin)
 
 ## Quick Links
@@ -36,8 +36,8 @@ The list of customizable email notifications are listed below.
 if emails from the Email Customizer plugin are not send or is not delivered, then please check the following.
 
 1. Check if any SMTP plugin is active. If yes check whether the SMTP plugin is configured correctly. Try placing Test mail from the SMTP plugin to rule out issues.
-2. If no SMTP plugins are active, then try an SMTP plugin like [Easy WP SMTP](https://en-gb.wordpress.org/plugins/easy-wp-smtp/)and configure the settings accordingly. 
-3. Use an email logging plugin like [WP Mail Logging](https://en-gb.wordpress.org/plugins/wp-mail-logging/) which will log all outgoing mails so you can see what is being sent. Place a test order to see if order emails are logged in WP Mail Logging settings (dashboard > WP Mail Log). If emails are not logged it could be a plugin or theme conflict.
+2. If no SMTP plugins are active, then try any SMTP plugin like [Easy WP SMTP](https://en-gb.wordpress.org/plugins/easy-wp-smtp/) and configure the settings accordingly. 
+3. Use an email logging plugin like [WP Mail Logging](https://en-gb.wordpress.org/plugins/wp-mail-logging/) which will log all outgoing mails so you can see what is being sent. Place a test order to see if order emails are logged in WP Mail Logging settings (dashboard -> WP Mail Log). If emails are not logged, it could be a plugin or theme conflict.
 4. Deactivate the Email Customizer plugin and confirm whether WooCommerce Default emails are delivered. Continue this process by deactivating other plugins till email is sent or delivered.
 5. If none of the above steps solve the issue, please contact Email Customizer support team
 
@@ -112,30 +112,18 @@ You can use the `Custom Hook` as follows
 		}
 		add_action('themehigh_template_hook', 'themehigh_template_hook_callback', 10, 2);    
 
-	    
-### USING CUSTOM HOOK
-
-Email customizer has a special feature called `Custom Hook`. The `Custom Hook` is an action hook, which can be used to add dynamic contents to the email template. You can use custom hook to show Order meta fields, Display shortcodes from third party plugins in Email,  Result based on checkout field values or on the email status like processing, on hold etc.
-
-You can use the `Custom Hook` as follows
-
-1. Click on `Add Element` button inside a column.
-2. From the list that appears on sidebar, navigate and click on `WooCommerce Hooks` section.
-3. Click on `Custom Hook` tile. You can see `{custom_hook_name}` added to the builder.
-4. Click on the `Edit` button (pencil icon) near the `Custom Hook` entry in the right sidebar
-5. Enter a unique name for the hook (eg: **themehigh_template_hook** ). Using an existing hook name can cause unexpected errors.
    
 
 ### THEMEHIGH CHECKOUT FIELD EDITOR PLUGIN INTEGRATION
    
-The plugin [Themehigh Checkout Field Editor for WooCommerce](https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/) is compatible with email customizer plugin. Checkout field editor plugin passes checkout fields conditionally to default woocommerce hook **woocommerce_email_order_meta** or **woocommerce_email_customer_details**
+The plugin [Themehigh Checkout Field Editor for WooCommerce](https://www.themehigh.com/product/woocommerce-checkout-field-editor-pro/) is compatible with email customizer. The fields created using Checkout field editor plugin is passed conditionally to default woocommerce hooks
+**woocommerce_email_order_meta** or **woocommerce_email_customer_details**
 
-Email customizer have option to show the checkout fields anywhere in the template using a shortcode `[WCFE name="field_name" label="field_label"]`
+Email customizer have option to show the checkout fields anywhere in the template using a shortcode `[WCFE name='field_name' label='field_label']`
 
-You can use the shortcode `[WCFE name="field_name"]` to show only the field value.
+You can use the shortcode `[WCFE name="field_name"]` to show only the value without label.
 
-Eg: consider you have created a field `test_field` in the `Checkout Field Editor plugin`. In order to show the field in the email template at a particular position, you can use `[WCFE name='test_field' label='Test Field']`
-
+Eg: Consider you have created a field `test_field` in the checkout field editor plugin. In order to show the field in the email template at a particular position, you can use the above shortcode as `[WCFE name='test_field' label='Test Field']`.
 
 N.B: Remember not to use double qoutes in the shortcode. 
 
