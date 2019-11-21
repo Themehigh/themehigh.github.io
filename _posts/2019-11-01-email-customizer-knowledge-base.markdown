@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Email Customizer for WooCommerce (Knowledge Base )
+title:  Email Customizer for WooCommerce
 categories: jekyll update
 ---
 
-#### THEMEHIGH EMAIL CUSTOMIZER FOR WOOCOMMERCE [FREE VERSION](https://wordpress.org/plugins/email-customizer-for-woocommerce/) [PREMIUM VERSION](https://www.themehigh.com/product/woocommerce-email-customizer/) [DEMO](https://flydemos.com/wecm/wp-admin)
+##### [FREE VERSION](https://wordpress.org/plugins/email-customizer-for-woocommerce/) [PREMIUM VERSION](https://www.themehigh.com/product/woocommerce-email-customizer/) [DEMO](https://flydemos.com/wecm/wp-admin)
 
 ## Quick Links
 {:.no_toc}
