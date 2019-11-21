@@ -4,6 +4,10 @@ title:  Email Customizer Knowledge Base
 categories: jekyll update
 ---
 
+## Quick Links
+{:.no_toc}
+
+* Table of content. Use {:.no_toc} to escape some heading
 {:toc}
    
 ### ARE ALL EMAILS CUSTOMIZABLE ?
