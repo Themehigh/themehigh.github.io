@@ -5,7 +5,7 @@ categories: jekyll update
 ---
 
 ###### Themehigh Email Customizer plugin for WooCommerce - Design the way you love !!
-[FREE](https://wordpress.org/plugins/email-customizer-for-woocommerce/) | [PREMIUM](https://www.themehigh.com/product/woocommerce-email-customizer/) | [DEMO](https://flydemos.com/wecm/wp-admin)
+[FREE](https://wordpress.org/plugins/email-customizer-for-woocommerce/) | [PREMIUM](https://www.themehigh.com/product/woocommerce-email-customizer/) | [DEMO](https://flydemos.com/wecm/wp-admin) | [DOCS](https://www.themehigh.com/help-guides/woocommerce-email-customizer/)
 
 ## Quick Links
 {:.no_toc}
@@ -44,7 +44,8 @@ if emails from the Email Customizer plugin are not send or is not delivered, the
 
 ### BROKEN IMAGES IN EMAILS
    
-   If the image in email send using Email Customizer plugin is broken, confirm whether the image is publicly accessible. Also ensure your images are inserted with a full URL including the protocol.     
+   If the image in email send using Email Customizer plugin is broken, confirm whether the image is publicly accessible. Also ensure your images are inserted with a full URL including the protocol.
+        
    
 
 ### CUSTOMER NOTE IN EMAIL TEMPLATE
@@ -124,6 +125,11 @@ You can use the shortcode `[WCFE name='field_name']` to show only the value with
 
 Eg: Consider you have created a field `test_field` in the checkout field editor plugin. In order to show the field in the email template at a particular position, you can use the above shortcode as `[WCFE name='test_field' label='Test Field']`.
 
-N.B: Remember not to use double qoutes in the shortcode. 
+N.B: Remember not to use double qoutes in the shortcode.
+   
 
+### DUPLICATING EMAIL TEMPLATES
+
+How can i make the copy of a template that i have created ? Do i have to start from scratch again ?
+No. You don't have to do this. Making a copy of any template you have created is so easy. Just rename and save the template. You will have a new copy of template you were editing without losing the old one. Follow the below steps to duplicate the email template.  
 
