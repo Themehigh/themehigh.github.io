@@ -132,4 +132,8 @@ N.B: Remember not to use double qoutes in the shortcode.
 
 How can i make the copy of a template that i have created ? Do i have to start from scratch again ?
 No. You don't have to do this. Making a copy of any template you have created is so easy. Just rename and save the template. You will have a new copy of template you were editing without losing the old one. Follow the below steps to duplicate the email template.  
+1. Go to Templates submenu(If you're not editing a template or want to make duplicate of saved template)
+2. Goto `Edit Template` section and choose the template you wish to duplicate. Then click `Edit`.
+3. From the template that is loaded in builder, give another name to the template in the top left textbox.
+4. click `Save` button and your template is duplicated.
 
