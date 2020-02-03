@@ -59,9 +59,7 @@ Follow the steps to display customer note.
 3. Click on  `Edit` (pencil icon) near the Text element.
 4. Type the placeholder `{th_customer_note}` to display customer note.  
 
-You can use the available placeholders to place dynamic datas. For more placeholders, see <a></a>
-The available placeholders are **{th_customer_name}**, **{th_billing_phone}**, **{th_order_id}**, **{th_order_url}**, **{th_billing_email}**, **{th_site_url}**, **{th_site_name}**, **{th_order_completed_date}**, **{th_order_created_date}**, **{th_checkout_payment_url}**, **{th_payment_method}**, **{th_customer_note}**, **{th_user_login}**, **{th_user_pass}**, **{th_account_area_url}**, **{th_reset_password_url}**.
-
+You can use the available placeholders to place dynamic datas. For more placeholders, [see](#placeholders-in-email-template).
 
 ### USING WOOCOMMERCE HOOKS IN TEMPALTE
 
@@ -141,7 +139,24 @@ No. You don't have to do this. Making a copy of any template you have created is
 ### PLACEHOLDERS IN EMAIL TEMPLATE
 
 Placeholders can be used in email template to replace dynamic contents. Our email customizer plugin provides a number of placeholders, which you can insert in your template, to display dynamic data.
-The available placeholders are **{th_customer_name}**, **{th_billing_phone}**, **{th_order_id}**, **{th_order_url}**, **{th_billing_email}**, **{th_site_url}**, **{th_site_name}**, **{th_order_completed_date}**, **{th_order_created_date}**, **{th_checkout_payment_url}**, **{th_payment_method}**, **{th_customer_note}**, **{th_user_login}**, **{th_user_pass}**, **{th_account_area_url}**, **{th_reset_password_url}**.
+The available placeholders are   
+
+{th_customer_name}  -  Displays the customer name
+{th_billing_phone}  -  Displays the billing phone number   
+{th_billing_email}  -  Displays the billing email
+{th_order_id}	    -  Displays the Order ID
+{th_order_url}		-  Displays the url to the Order in My account page   
+{th_site_url}		-  Displays the url to the site   
+{th_site_name}		-  Displays the name of the site   
+{th_order_completed_date}	-  Displays the Order completed date 
+{th_order_created_date}		-  Displays the Order created date   
+{th_checkout_payment_url}	-  Displays the payment url   
+{th_payment_method}			-  Displays the payment method name   
+{th_customer_note}			-  Displays the customer note   
+{th_user_login}				-  Displays the username   
+{th_user_pass}				-  Displays the password   
+{th_account_area_url}		-  Displays the url to my account page   
+{th_reset_password_url}   	-  Displays url to reset password   
 
 New list of placeholders are available from version 2.0.5
 
@@ -209,9 +224,9 @@ You can access these sample templates as follows
 
 ### MISSING SAMPLE TEMPLATES ?
 
-IF your `Sample Templates` group in the `Edit Template` section dropdown is  empty or if you are seeing --empty-- option under 	Sample Templates group in dropdown, then you can follow the below steps.
+If your `Sample Templates` group in the `Edit Template` section dropdown is  empty or if you are seeing --empty-- option under `Sample Templates` group in dropdown, then you can follow the below steps.
 
 1. Add the following code to the active theme/child theme functions.php
-    `add_filter('thwec_reset_sample_templates', '__return_true');`
+    add_filter('thwec_reset_sample_templates', '__return_true');    
 2. Deactivate and Activate the plugin
-3. You will see sample templates added to the dropdown
+3. You will see sample templates added to the dropdown.
