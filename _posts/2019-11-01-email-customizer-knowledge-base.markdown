@@ -159,8 +159,8 @@ The available placeholders are
 
 New list of placeholders are available from version 2.0.5
 
-**Site Related**   
-{site_url}  	-  Displays the url to the site   
+##### Site Related**   
+**{site_url}**  	-  Displays the url to the site   
 {site_name} 	-  Displays the name of the site   
 
 **Order Related**   
