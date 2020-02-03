@@ -104,12 +104,11 @@ You can use the `Custom Hook` as follows
 4. Click on the `Edit` button (pencil icon) near the `Custom Hook` entry in the right sidebar
 5. Enter a unique name for the hook (eg: **themehigh_template_hook** ). Using an existing hook name can cause unexpected errors.
 6. Use the hook name provided to write a function in the active theme/ child theme functions.php. 
-
 	
 		function themehigh_template_hook_callback( $order, $email ){
 			// Your content here
 		}
-		add_action('themehigh_template_hook', 'themehigh_template_hook_callback', 10, 2);    
+		add_action('themehigh_template_hook', 'themehigh_template_hook_callback', 10, 2);     
 
    
 
@@ -141,14 +140,14 @@ No. You don't have to do this. Making a copy of any template you have created is
 Placeholders can be used in email template to replace dynamic contents. Our email customizer plugin provides a number of placeholders, which you can insert in your template, to display dynamic data.
 The available placeholders are   
 
-{th_customer_name}  -  Displays the customer name
+{th_customer_name}  -  Displays the customer name   
 {th_billing_phone}  -  Displays the billing phone number   
-{th_billing_email}  -  Displays the billing email
-{th_order_id}	    -  Displays the Order ID
+{th_billing_email}  -  Displays the billing email   
+{th_order_id}	    -  Displays the Order ID   
 {th_order_url}		-  Displays the url to the Order in My account page   
 {th_site_url}		-  Displays the url to the site   
 {th_site_name}		-  Displays the name of the site   
-{th_order_completed_date}	-  Displays the Order completed date 
+{th_order_completed_date}	-  Displays the Order completed date   
 {th_order_created_date}		-  Displays the Order created date   
 {th_checkout_payment_url}	-  Displays the payment url   
 {th_payment_method}			-  Displays the payment method name   
@@ -213,7 +212,7 @@ New list of placeholders are available from version 2.0.5
 
 ### SAMPLE TEMPLATES
 
-From version 2.0.5, you have access to sample templates, which you can access from templates page of the plugin.
+From version 2.0.5, you have sample templates, which can be accessed from templates page of the plugin.
 You can access these sample templates as follows
 
 1. Click on `Templates` submenu from dashboard.
@@ -226,7 +225,10 @@ You can access these sample templates as follows
 
 If your `Sample Templates` group in the `Edit Template` section dropdown is  empty or if you are seeing --empty-- option under `Sample Templates` group in dropdown, then you can follow the below steps.
 
-1. Add the following code to the active theme/child theme functions.php
-    add_filter('thwec_reset_sample_templates', '__return_true');    
+1. Add the following code to the active theme/child theme functions.php   
+	    
+		add_filter('thwec_reset_sample_templates', '__return_true');
+
 2. Deactivate and Activate the plugin
-3. You will see sample templates added to the dropdown.
+3. You will see sample templates added to the dropdown.   
+
