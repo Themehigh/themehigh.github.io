@@ -145,11 +145,11 @@ The available placeholders are **{th_customer_name}**, **{th_billing_phone}**, *
 
 New list of placeholders are available from version 2.0.5
 
-//Site Related   
+**Site Related**   
 {site_url}  	-  Displays the url to the site   
 {site_name} 	-  Displays the name of the site   
 
-// Order Related   
+**Order Related**   
 {order_id}				-  Displays the Order ID   
 {order_url}				-  Displays the url to the Order in My account page   
 {order_completed_date}	-  Displays the Order completed date   
@@ -157,7 +157,7 @@ New list of placeholders are available from version 2.0.5
 {order_total}			-  Displays the order total   
 {order_formatted_total} -  Displays the formatted order total   
 
-//Billing Fields
+**Billing Fields**   
 {billing_first_name}	-  Displays the billing first name in billing address   
 {billing_last_name}    	-  Displays the billing last name   
 {billing_company}		-  Displays the billing company name   
@@ -170,7 +170,7 @@ New list of placeholders are available from version 2.0.5
 {billing_phone}			-  Displays the billing phone   
 {billing_email}			-  Displays the billing email   
 
-// Shipping Fields   
+**Shipping Fields**   
 {shipping_first_name}	-  Displays the shipping first name   
 {shipping_last_name}	-  Displays the shipping last name   
 {shipping_company}		-  Displays the shipping company name   
@@ -181,16 +181,37 @@ New list of placeholders are available from version 2.0.5
 {shipping_state}		-  Displays the shipping state name   
 {shipping_postcode}		-  Displays the shipping postcode   
 
-//Account Related   
+**Account Related**  
 {user_login}			-  Displays the username   
 {user_pass}				-  Displays the password   
 {account_area_url} 		-  Displays the url to my account page   
 {reset_password_url} 	-  Displays url to reset password   
 
-//Other
+**Other**   
 {customer_name} 		-  Displays the first name of customer   
 {customer_full_name}	-  Displays the full name of customer   
 {customer_note}			-  Displays the customer note   
 {checkout_payment_url}	-  Displays the payment url   
 {shipping_method}		-  Displays the shipping method   
 {payment_method}		-  Displays the payment method name   
+
+
+### SAMPLE TEMPLATES
+
+From version 2.0.5, you have access to sample templates, which you can access from templates page of the plugin.
+You can access these sample templates as follows
+
+1. Click on `Templates` submenu from dashboard.
+2. From the `Edit Template` section, click on the dropdown under `Choose Template`.
+3. You will see two groups in dropdown. `User Templates` and `Sample Templates`.
+4. Choose a template from `Sample Templates` group and click the `Edit` Button.
+5. The chosen template will be opened in the builder. You can give a name to the template, make changes if necessary and save the template.
+
+### MISSING SAMPLE TEMPLATES ?
+
+IF your `Sample Templates` group in the `Edit Template` section dropdown is  empty or if you are seeing --empty-- option under 	Sample Templates group in dropdown, then you can follow the below steps.
+
+1. Add the following code to the active theme/child theme functions.php
+    `add_filter('thwec_reset_sample_templates', '__return_true');`
+2. Deactivate and Activate the plugin
+3. You will see sample templates added to the dropdown
