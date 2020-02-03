@@ -164,7 +164,7 @@ New list of placeholders are available from version 2.0.5
 **{site_name}** 	-  Displays the name of the site   
 
 ##### Order Related   
-**{order_id}****				-  Displays the Order ID   
+**{order_id}**				-  Displays the Order ID   
 **{order_url}**				-  Displays the url to the Order in My account page   
 **{order_completed_date}**	-  Displays the Order completed date   
 **{order_created_date}**	-  Displays the Order created date   
@@ -200,8 +200,8 @@ New list of placeholders are available from version 2.0.5
 **{user_pass}**				-  Displays the password   
 **{account_area_url}** 		-  Displays the url to my account page   
 **{reset_password_url}** 	-  Displays url to reset password   
-
-##### Other    
+ 
+##### Other   
 **{customer_name}** 		-  Displays the first name of customer   
 **{customer_full_name}**	-  Displays the full name of customer   
 **{customer_note}**			-  Displays the customer note   
