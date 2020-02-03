@@ -145,17 +145,17 @@ The available placeholders are **{th_customer_name}**, **{th_billing_phone}**, *
 
 New list of placeholders are available from version 2.0.5
 
-//Site Related
-{site_url}  	-  Displays the url to the site
-{site_name} 	-  Displays the name of the site
+//Site Related   
+{site_url}  	-  Displays the url to the site   
+{site_name} 	-  Displays the name of the site   
 
-// Order Related
-{order_id}				-  Displays the Order ID
-{order_url}				-  Displays the url to the Order in My account page
-{order_completed_date}	-  Displays the Order completed date
-{order_created_date}	-  Displays the Order created date
-{order_total}			-  Displays the order total
-{order_formatted_total} -  Displays the formatted order total
+// Order Related   
+{order_id}				-  Displays the Order ID   
+{order_url}				-  Displays the url to the Order in My account page   
+{order_completed_date}	-  Displays the Order completed date   
+{order_created_date}	-  Displays the Order created date   
+{order_total}			-  Displays the order total   
+{order_formatted_total} -  Displays the formatted order total   
 
 //Billing Fields
 {billing_first_name}	-  Displays the billing first name in billing address
