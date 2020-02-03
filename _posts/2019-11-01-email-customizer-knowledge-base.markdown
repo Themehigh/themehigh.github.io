@@ -59,7 +59,7 @@ Follow the steps to display customer note.
 3. Click on  `Edit` (pencil icon) near the Text element.
 4. Type the placeholder `{th_customer_note}` to display customer note.  
 
-You can use the available placeholders to place dynamic datas.
+You can use the available placeholders to place dynamic datas. For more placeholders, see <a></a>
 The available placeholders are **{th_customer_name}**, **{th_billing_phone}**, **{th_order_id}**, **{th_order_url}**, **{th_billing_email}**, **{th_site_url}**, **{th_site_name}**, **{th_order_completed_date}**, **{th_order_created_date}**, **{th_checkout_payment_url}**, **{th_payment_method}**, **{th_customer_note}**, **{th_user_login}**, **{th_user_pass}**, **{th_account_area_url}**, **{th_reset_password_url}**.
 
 
@@ -136,4 +136,63 @@ No. You don't have to do this. Making a copy of any template you have created is
 2. Goto `Edit Template` section and choose the template you wish to duplicate. Then click `Edit`.
 3. From the template that is loaded in builder, give another name to the template in the top left textbox.
 4. click `Save` button and your template is duplicated.
+
+
+### PLACEHOLDERS IN EMAIL TEMPLATE
+
+Placeholders can be used in email template to replace dynamic contents. Our email customizer plugin provides a number of placeholders, which you can insert in your template, to display dynamic data.
+The available placeholders are **{th_customer_name}**, **{th_billing_phone}**, **{th_order_id}**, **{th_order_url}**, **{th_billing_email}**, **{th_site_url}**, **{th_site_name}**, **{th_order_completed_date}**, **{th_order_created_date}**, **{th_checkout_payment_url}**, **{th_payment_method}**, **{th_customer_note}**, **{th_user_login}**, **{th_user_pass}**, **{th_account_area_url}**, **{th_reset_password_url}**.
+
+New list of placeholders are available from version 2.0.5
+
+//Site Related
+{site_url}  	-  Displays the url to the site
+{site_name} 	-  Displays the name of the site
+
+// Order Related
+{order_id}				-  Displays the Order ID
+{order_url}				-  Displays the url to the Order in My account page
+{order_completed_date}	-  Displays the Order completed date
+{order_created_date}	-  Displays the Order created date
+{order_total}			-  Displays the order total
+{order_formatted_total} -  Displays the formatted order total
+
+//Billing Fields
+{billing_first_name}	-  Displays the billing first name in billing address
+{billing_last_name}    	-  Displays the billing last name
+{billing_company}		-  Displays the billing company name
+{billing_country}		-  Displays the biling country name
+{billing_address_1}		-  Displays the billing address1
+{billing_address_2}		-  Displays the billing address2
+{billing_city}			-  Displays the billing city
+{billing_state}			-  Displays the billing state
+{billing_postcode}		-  Displays the billing postcode
+{billing_phone}			-  Displays the billing phone
+{billing_email}			-  Displays the billing email
+
+// Shipping Fields
+{shipping_first_name}	-  Displays the shipping first name
+{shipping_last_name}	-  Displays the shipping last name
+{shipping_company}		-  Displays the shipping company name
+{shipping_country}		-  Displays the shipping country name
+{shipping_address_1}	-  Displays the shipping address1
+{shipping_address_2}	-  Displays the shipping address2
+{shipping_city}			-  Displays the shipping city name
+{shipping_state}		-  Displays the shipping state name
+{shipping_postcode}		-  Displays the shipping postcode
+
+//Account Related
+{user_login}			-  Displays the username
+{user_pass}				-  Displays the password
+{account_area_url} 		-  Displays the url to my account page
+{reset_password_url} 	-  Displays url to reset password
+
+//Other
+{customer_name} 		-  Displays the first name of customer	 
+{customer_full_name}	-  Displays the full name of customer
+{customer_note}			-  Displays the customer note
+{checkout_payment_url}	-  Displays the payment url
+{shipping_method}		-  Displays the shipping method
+{payment_method}		-  Displays the payment method name
+
 
