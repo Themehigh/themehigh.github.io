@@ -158,41 +158,39 @@ New list of placeholders are available from version 2.0.5
 {order_formatted_total} -  Displays the formatted order total   
 
 //Billing Fields
-{billing_first_name}	-  Displays the billing first name in billing address
-{billing_last_name}    	-  Displays the billing last name
-{billing_company}		-  Displays the billing company name
-{billing_country}		-  Displays the biling country name
-{billing_address_1}		-  Displays the billing address1
-{billing_address_2}		-  Displays the billing address2
-{billing_city}			-  Displays the billing city
-{billing_state}			-  Displays the billing state
-{billing_postcode}		-  Displays the billing postcode
-{billing_phone}			-  Displays the billing phone
-{billing_email}			-  Displays the billing email
+{billing_first_name}	-  Displays the billing first name in billing address   
+{billing_last_name}    	-  Displays the billing last name   
+{billing_company}		-  Displays the billing company name   
+{billing_country}		-  Displays the biling country name   
+{billing_address_1}		-  Displays the billing address1   
+{billing_address_2}		-  Displays the billing address2  
+{billing_city}			-  Displays the billing city   
+{billing_state}			-  Displays the billing state   
+{billing_postcode}		-  Displays the billing postcode   
+{billing_phone}			-  Displays the billing phone   
+{billing_email}			-  Displays the billing email   
 
-// Shipping Fields
-{shipping_first_name}	-  Displays the shipping first name
-{shipping_last_name}	-  Displays the shipping last name
-{shipping_company}		-  Displays the shipping company name
-{shipping_country}		-  Displays the shipping country name
-{shipping_address_1}	-  Displays the shipping address1
-{shipping_address_2}	-  Displays the shipping address2
-{shipping_city}			-  Displays the shipping city name
-{shipping_state}		-  Displays the shipping state name
-{shipping_postcode}		-  Displays the shipping postcode
+// Shipping Fields   
+{shipping_first_name}	-  Displays the shipping first name   
+{shipping_last_name}	-  Displays the shipping last name   
+{shipping_company}		-  Displays the shipping company name   
+{shipping_country}		-  Displays the shipping country name   
+{shipping_address_1}	-  Displays the shipping address1   
+{shipping_address_2}	-  Displays the shipping address2   
+{shipping_city}			-  Displays the shipping city name   
+{shipping_state}		-  Displays the shipping state name   
+{shipping_postcode}		-  Displays the shipping postcode   
 
-//Account Related
-{user_login}			-  Displays the username
-{user_pass}				-  Displays the password
-{account_area_url} 		-  Displays the url to my account page
-{reset_password_url} 	-  Displays url to reset password
+//Account Related   
+{user_login}			-  Displays the username   
+{user_pass}				-  Displays the password   
+{account_area_url} 		-  Displays the url to my account page   
+{reset_password_url} 	-  Displays url to reset password   
 
 //Other
-{customer_name} 		-  Displays the first name of customer	 
-{customer_full_name}	-  Displays the full name of customer
-{customer_note}			-  Displays the customer note
-{checkout_payment_url}	-  Displays the payment url
-{shipping_method}		-  Displays the shipping method
-{payment_method}		-  Displays the payment method name
-
-
+{customer_name} 		-  Displays the first name of customer   
+{customer_full_name}	-  Displays the full name of customer   
+{customer_note}			-  Displays the customer note   
+{checkout_payment_url}	-  Displays the payment url   
+{shipping_method}		-  Displays the shipping method   
+{payment_method}		-  Displays the payment method name   
