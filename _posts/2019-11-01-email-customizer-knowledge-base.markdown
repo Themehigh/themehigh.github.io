@@ -155,7 +155,9 @@ The available placeholders are
 **{th_user_login}**				-  Displays the username   
 **{th_user_pass}**				-  Displays the password   
 **{th_account_area_url}**		-  Displays the url to my account page   
-**{th_reset_password_url}**   	-  Displays url to reset password   
+**{th_reset_password_url}**   	-  Displays url to reset password
+
+The above placeholders can be used without the *th_* prefix from version 2.0.5
 
 New list of placeholders are available from version 2.0.5
 
@@ -165,6 +167,7 @@ New list of placeholders are available from version 2.0.5
 
 ##### Order Related   
 **{order_id}**				-  Displays the Order ID   
+**{order_number}**          -  Displays the order number. By default, order ID( from v3.0.0 )   
 **{order_url}**				-  Displays the url to the Order in My account page   
 **{order_completed_date}**	-  Displays the Order completed date   
 **{order_created_date}**	-  Displays the Order created date   
@@ -198,8 +201,10 @@ New list of placeholders are available from version 2.0.5
 ##### Account Related   
 **{user_login}**			-  Displays the username   
 **{user_pass}**				-  Displays the password   
+**{user_email}**            -  Displays the user email. This placeholder can be used in Account related emails ( from v3.0.0 )   
 **{account_area_url}** 		-  Displays the url to my account page   
 **{reset_password_url}** 	-  Displays url to reset password   
+**{account_order_url}**     -  Displays url to my account orders page ( from v3.0.0 )   
  
 ##### Other   
 **{customer_name}** 		-  Displays the first name of customer   
