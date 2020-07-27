@@ -167,7 +167,7 @@ New list of placeholders are available from version 2.0.5
 
 ##### Order Related   
 **{order_id}**				-  Displays the Order ID   
-**{order_number}**          -  Displays the order number. By default, order ID( from v3.0.0 )   
+**{order_number}**          -  Displays the order number. By default, order ID (v3.0.0)   
 **{order_url}**				-  Displays the url to the Order in My account page   
 **{order_completed_date}**	-  Displays the Order completed date   
 **{order_created_date}**	-  Displays the Order created date   
@@ -201,10 +201,10 @@ New list of placeholders are available from version 2.0.5
 ##### Account Related   
 **{user_login}**			-  Displays the username   
 **{user_pass}**				-  Displays the password   
-**{user_email}**            -  Displays the user email. This placeholder can be used in Account related emails ( from v3.0.0 )   
+**{user_email}**            -  Displays the user email (v3.0.0)   
 **{account_area_url}** 		-  Displays the url to my account page   
 **{reset_password_url}** 	-  Displays url to reset password   
-**{account_order_url}**     -  Displays url to my account orders page ( from v3.0.0 )   
+**{account_order_url}**     -  Displays url to my account orders page (v3.0.0)   
  
 ##### Other   
 **{customer_name}** 		-  Displays the first name of customer   
@@ -213,6 +213,8 @@ New list of placeholders are available from version 2.0.5
 **{checkout_payment_url}**	-  Displays the payment url   
 **{shipping_method}**		-  Displays the shipping method   
 **{payment_method}**		-  Displays the payment method name   
+
+**N.B** : {customer_name} placeholder works only in order related emails. In account related emails use {user_login} instead.
 
 
 ### SAMPLE TEMPLATES
