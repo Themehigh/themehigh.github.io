@@ -241,28 +241,28 @@ If your `Sample Templates` group in the `Edit Template` section dropdown is  emp
    
 ### WPML - EMAIL CUSTOMIZER COMPATIBILITY
    
-From version `3.0.0`, Email Customizer is compatible with WPML. This means that you can create template for each language added in WPML. Suppose you have 3 languages setup in WPML, email customizer provides you option to create template for each of the 3 languages.
+From version `3.0.0`, Email Customizer is compatible with WPML. This means that you can create template for each language added in WPML. Suppose you have 3 languages setup in WPML, email customizer provides you an option to create templates for each of the 3 language.
 
 ##### How does it work ?
 
-1. Create a template (**My Template**) in the Email Customizer. The default language which will be automatically selected in the language selector ( drop down in builder header ).
-2. The template created in default language is called the `base template`.
-3. Once you have completed making changes, save the template by clicking the `Save` button in builder header. Now from the language selector( the drop down in builder header ), choose the language in which you need to make the template.
-4. You will see the base template loaded in the builder. Make necessary changes and click `Save` button in the builder header ( without changing the template name ). Now the template is saved for the new language.
-5. Similarly, you can just change language in builder and save changes for all languages.
+1. Create a template (**My Template**) in the Email Customizer. The default language will be automatically selected in the language selector ( drop down in builder header ).
+2. The template created in the default language is called the `base template`.
+3. Once you have completed making changes, save the template by clicking the `Save` button in the builder header. Now from the language selector( the drop down in builder header ), choose the language in which you need to make the template.
+4. You will see the `base template` loaded in the builder. Make necessary changes and click `Save` button in the builder header ( without changing the template name ). Now the template is saved for the new language.
+5. Similarly, you can just change the language in builder and save changes for all the languages.
 6. Now you have created template **My Template** in all WPML languages. i.e, under a template name **MY Template**, you have created WPML language versions of the template.
-7. Assign this template to an email from `Email Customizer -> Templates -> Template Mapping`
+7. Assign this template to an email from `Email Customizer -> Templates -> Template Mapping`. 
 
-Now when an order is placed, based on the language in which order is placed, corresponding language version of the template (**My Template**) is loaded.
+Now when an order is placed, based on the language in which the order is placed, the corresponding language version of the template (**My Template**) will be loaded.
 
 ##### WPML Template Selection Criterias.
 
 When the WooCommerce email is triggered, the WPML email template is selected based on some criterias. 
-1. Checks for the order placed language version of assigned template. Suppose if the assigned template for an email is **My Template**, then the plugin checks for the order placed language version of **My Template**. If it exists, the corresponding version of template is loaded.
+1. Pliugin checks for the order placed language version of the assigned template. Suppose if the assigned template for an email is **My Template**, then the plugin checks for the order placed language version of **My Template**. If the template version exists, the corresponding version of template is loaded.
 2. If not, plugin checks for the default language version of the template (**My Template**). If the corresponding template is found, then the template is loaded.
 
 
-###### Editing WPML Templates
+##### Editing WPML Templates
 
 The templates created using the Email Customizer are listed in `Email Customizer -> Templates -> Manage Template`.
 Click the `Edit` option under the template name. The template in the default language will be loaded in the builder. 
