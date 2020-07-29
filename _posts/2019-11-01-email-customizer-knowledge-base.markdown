@@ -238,4 +238,35 @@ If your `Sample Templates` group in the `Edit Template` section dropdown is  emp
 
 2. Deactivate and Activate the plugin
 3. You will see sample templates added to the dropdown.   
+   
+### WPML - EMAIL CUSTOMIZER COMPATIBILITY ?
+   
+From version `3.0.0`, Email Customizer is compatible with WPML. This means that you can create template for each language added in WPML. Suppose you have 3 languages setup in WPML, email customizer provides you option to create template for each of the 3 languages.
+
+##### How does it work ?
+
+1. Create template (**My Template**) in the default language which will be automatically selected in the language selector drop down in builder header.
+2. The template created in default language is the `base template`.
+3. Once you have completed making changes, save the template by clicking the `Save` template in builder header. Now from the language selector( the drop down in builder header ), choose the language in which you need to make changes to the template.
+4. You will see the base template loaded in the builder. Make necessary changes and click `Save` button in the builder header ( without changing the template name ). Now the template is saved for the new language.
+5. Similarly, you can just change language in builder and save changes for all languages.
+6. Now you have created template **My Template** in all WPML languages.
+7. Assign this template to an email from `Email Customizer -> Templates -> Template Mapping`
+
+Now when an order is placed, based on the language in which order is placed, corresponding language version of the template (**My Template**) is loaded.
+
+##### WPML Template Selection Criterias.
+
+The WPML email template is selected based on some criterias. 
+1. Checks for the order placed language version of assigned template. Suppose if the assigned template for an email is **My Template**, then the plugin checks for the order placed language version of **My Template**. If it exists, the corresponding version of template is loaded.
+2. If not, plugin checks for the default language version of the template (**My Template**). If the corresponding template is found, then the template is loaded.
+
+
+###### Editing WPML Templates
+
+The templates created using the Email Customizer are listed in `Email Customizer -> Templates -> Manage Template`.
+Click the `Edit` option under the template name. The template in the default language will be loaded in the builder. 
+Change the language in language selector( drop down in builder header), to view other language version of the template.   
+   
+   
 
