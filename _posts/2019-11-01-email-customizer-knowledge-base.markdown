@@ -245,12 +245,12 @@ From version `3.0.0`, Email Customizer is compatible with WPML. This means that 
 
 ##### How does it work ?
 
-1. Create template (**My Template**) in the default language which will be automatically selected in the language selector drop down in builder header.
-2. The template created in default language is the `base template`.
-3. Once you have completed making changes, save the template by clicking the `Save` template in builder header. Now from the language selector( the drop down in builder header ), choose the language in which you need to make changes to the template.
+1. Create a template (**My Template**) in the Email Customizer. The default language which will be automatically selected in the language selector ( drop down in builder header ).
+2. The template created in default language is called the `base template`.
+3. Once you have completed making changes, save the template by clicking the `Save` button in builder header. Now from the language selector( the drop down in builder header ), choose the language in which you need to make the template.
 4. You will see the base template loaded in the builder. Make necessary changes and click `Save` button in the builder header ( without changing the template name ). Now the template is saved for the new language.
 5. Similarly, you can just change language in builder and save changes for all languages.
-6. Now you have created template **My Template** in all WPML languages.
+6. Now you have created template **My Template** in all WPML languages. i.e, under a template name **MY Template**, you have created WPML language versions of the template.
 7. Assign this template to an email from `Email Customizer -> Templates -> Template Mapping`
 
 Now when an order is placed, based on the language in which order is placed, corresponding language version of the template (**My Template**) is loaded.
@@ -268,5 +268,5 @@ The templates created using the Email Customizer are listed in `Email Customizer
 Click the `Edit` option under the template name. The template in the default language will be loaded in the builder. 
 Change the language in language selector( drop down in builder header), to view other language version of the template.   
    
-   
+
 
