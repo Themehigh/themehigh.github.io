@@ -239,7 +239,7 @@ If your `Sample Templates` group in the `Edit Template` section dropdown is  emp
 2. Deactivate and Activate the plugin
 3. You will see sample templates added to the dropdown.   
    
-### WPML - EMAIL CUSTOMIZER COMPATIBILITY ?
+### WPML - EMAIL CUSTOMIZER COMPATIBILITY
    
 From version `3.0.0`, Email Customizer is compatible with WPML. This means that you can create template for each language added in WPML. Suppose you have 3 languages setup in WPML, email customizer provides you option to create template for each of the 3 languages.
 
@@ -257,7 +257,7 @@ Now when an order is placed, based on the language in which order is placed, cor
 
 ##### WPML Template Selection Criterias.
 
-The WPML email template is selected based on some criterias. 
+When the WooCommerce email is triggered, the WPML email template is selected based on some criterias. 
 1. Checks for the order placed language version of assigned template. Suppose if the assigned template for an email is **My Template**, then the plugin checks for the order placed language version of **My Template**. If it exists, the corresponding version of template is loaded.
 2. If not, plugin checks for the default language version of the template (**My Template**). If the corresponding template is found, then the template is loaded.
 
