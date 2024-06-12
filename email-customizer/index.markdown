@@ -18,7 +18,7 @@ layout: default
 </header>
 
 <div class="list">
-  {% if site.posts.size == 0 %}
+  {% if site.email-customizer.size == 0 %}
     <h2>No post found</h2>
   {% else %}
   <ul>
