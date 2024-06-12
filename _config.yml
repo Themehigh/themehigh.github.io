@@ -62,3 +62,7 @@ defaults:
 gems:
 
 exclude:            [vendor]
+
+collections:
+  email-customizer:
+    output: true

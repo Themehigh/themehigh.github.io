@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Email Customizer for WooCommerce
+title:  Knowledge base - Email Customizer for WooCommerce
 categories: jekyll update
 ---
 
